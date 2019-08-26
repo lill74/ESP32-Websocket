@@ -27,9 +27,9 @@ typedef struct {
   unsigned char buffer[64];                         /* input buffer */
 } MD5_CTX;
 
-void MD5Init (MD5_CTX *);
-void MD5Update (MD5_CTX *, unsigned char *, unsigned int);
-void MD5Final (unsigned char [16], MD5_CTX *);
+void MD5InitXXX (MD5_CTX *);
+void MD5UpdateXXX (MD5_CTX *, unsigned char *, unsigned int);
+void MD5FinalXXX (unsigned char [16], MD5_CTX *);
 
 /* Function used by Websockets implementation */
 void MD5 (unsigned char [], unsigned char [], unsigned int);
